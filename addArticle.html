@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Article</title>
+
+    <link rel="stylesheet" href="./assets/css/output.css">
+</head>
+
+<body>
+    <header class="w-full fixed bg-white ">
+        <nav class="container p-4 w-full flex justify-between relative">
+            <div class="font-semibold flex items-center text-2xl lg:text-3xl">MyResearch</div>
+            <div class="lg:text-xl md:translate-y-0 md:w-auto gap-4 py-4 md:py-0 md:gap-8 items-center md:static md:bg-transparent md:text-black md:flex-row navList font-inter flex flex-col transition-all bg-gray-800 p-2 w-screen text-white duration-500 ease-in-out absolute
+            top-16 translate-y-[-100vw] left-0">
+                <a class="flex gap-2 text-xl items-center" href="#home"><img class="w-4 hidden md:block"
+                        src="./assets/img/home-svgrepo-com.svg" alt="icon">
+                    Home</a>
+                <a class="flex gap-2 text-xl items-center" href="#current"><img class="w-4 hidden md:block"
+                        src="./assets/img/view-list-svgrepo-com.svg" alt="icon">
+                    Postingan</a>
+                <a class="flex gap-2 text-xl items-center" href="#article"><img class="w-4 hidden md:block"
+                        src="./assets/img/newspaper-regular.svg" alt="icon">
+                    Article</a>
+            </div>
+            <div class="gap-2 hidden lg:block items-center">
+                <button class="bg-blue-500 text-base text-white py-2 px-5 rounded-lg">Sign Up</button>
+                <button class="bg-blue-400 text-base text-white py-2 px-5 rounded-lg">Sign in</button>
+            </div>
+            <div class="humburger absolute block md:hidden right-4 top-7">
+                <span class="humburgerLine1 duration-500 ease-in-out h-[3px] w-[25px] bg-teal-700 block mb-1"></span>
+                <span class="humburgerLine2 duration-500 ease-in-out h-[3px] w-[15px] bg-teal-700 block mb-1"></span>
+                <span class="humburgerLine3 duration-500 ease-in-out h-[3px] w-[30px] bg-teal-700 block mb-1"></span>
+            </div>
+        </nav>
+    </header>
+    <main class="container px-4 pt-28 flex justify-center">
+        <div class="shadow-xl p-8 ">
+            <h1 class="font-epologue font-bold text-3xl mb-8">Postingan</h1>
+            <input class="w-60 sm:w-80 md:w-96 focus:outline-none block text-xl py-2 mb-8" type="text" name="title"
+                placeholder="Type your title">
+            <h2 class="font-epologue font-semibold mb-4 text-base">ATTACHMENTS</h2>
+            <p class=" flex gap-2 text-gray-400 mb-8"><img src="./assets/img/plus-solid.svg" alt="icon">Add
+                attachments
+            </p>
+            <label class="font-epologue font-semibold mb-4 text-base block" for="desc">DESCRIPTION</label>
+            <textarea class="block mb-4 focus:outline-none h-32 w-80 md:w-96" placeholder="Type your description"
+                name="description" id="desc"></textarea>
+            <button class="bg-blue-600 px-4 py-2 text-white rounded-md w-full">Submit</button>
+        </div>
+    </main>
+</body>
+
+</html>
